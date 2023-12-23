@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Navbar with Images</title>
+  <!-- Add Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    /* Custom styling for the navbar */
+    .navbar img {
+      max-height: 40px; /* Adjust the maximum height of the images as needed */
+      margin-right: 10px; /* Add some spacing between images */
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Expo-Display</a>
+
+    <!-- Left Image -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Ministry_of_Tourism_India.svg" alt="Left Image">
+      </li>
+    </ul>
+
+    <!-- Center Image -->
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+        <img src="https://engg.cambridge.edu.in/wp-content/uploads/2023/07/SIH.png" alt="Center Image">
+      </li>
+    </ul>
+
+    <!-- Right Image -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <img src="https://amritmahotsav.nic.in/writereaddata/portal/images/logo-poster-1.jpg" alt="Right Image">
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Content goes here -->
+
+  <!-- Add Bootstrap JS and Popper.js (required for Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+  <title>Card Titles - Temple and Zoo</title>
+  <!-- Add Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    /* Custom styling to center the cards */
+    .center-cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Custom styling for the selected card */
+    .selected-card {
+      background-color: #17a2b8; /* Bootstrap's info color */
+      color: #fff; /* White text on the selected card */
+    }
+
+    /* Custom styling for the cards */
+    .card {
+      transition: transform 0.3s;
+      margin: 20px;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      border-radius: 8px 8px 0 0;
+    }
+
+    .card-body {
+      border-radius: 0 0 8px 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container center-cards">
+    <div class="row">
+      <!-- Card 1 - Temple -->
+      <div class="card" style="width: 18rem;" onclick="selectCard(this)">
+        <img src="https://images.unsplash.com/photo-1573352763925-82bd5dfc31d1?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aGluZHUlMjB0ZW1wbGV8ZW58MHx8MHx8fDA%3D" class="card-img-top" alt="Temple Image">
+        <div class="card-body">
+          <h5 class="card-title">Temple</h5>
+          <p class="card-text">Explore the beauty of ancient temples.</p>
+          <a href="dashboard.html" class="btn btn-primary" onclick="showAlert('Learn More clicked for Temple'); event.stopPropagation();">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Card 2 - Zoo -->
+      <div class="card" style="width: 18rem;" onclick="selectCard(this)">
+        <img src="https://images.unsplash.com/photo-1639076527869-603a1fccc7f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGludmVybm98ZW58MHwxfDB8fHww&w=1000&q=80" class="card-img-top" alt="Zoo Image">
+        <div class="card-body">
+          <h5 class="card-title">Zoo</h5>
+          <p class="card-text">Experience the wonders of the animal kingdom.</p>
+          <a href="http://vandaloorhomepg.ccbp.tech/" class="btn btn-primary" onclick="showAlert('Discover Animals clicked for Zoo'); event.stopPropagation();">Discover Animals</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Bootstrap JS and Popper.js (required for Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script>
+    function showAlert(message) {
+      alert(message);
+    }
+
+    function selectCard(card) {
+      // Remove 'selected-card' class from all cards
+      var allCards = document.querySelectorAll('.card');
+      allCards.forEach(function (c) {
+        c.classList.remove('selected-card');
+      });
+
+      // Add 'selected-card' class to the clicked card
+      card.classList.add('selected-card');
+    }
+  </script>
+
+</body>
+
+</html>

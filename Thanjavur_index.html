@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tanjavur - UNESCO World Heritage Site</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <style>
+        /* Custom styles for the hero section */
+        .hero-section {
+            position: relative;
+            height: 50vh;
+            overflow: hidden;
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            z-index: 1;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: #343a40; /* Dark background color */
+        }
+
+        .navbar img {
+            max-height: 40px; /* Adjust the maximum height of the images as needed */
+            margin-right: 10px; /* Add some spacing between images */
+        }
+        
+    </style>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Expo-Display</a>
+
+    <!-- Left Image -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Ministry_of_Tourism_India.svg" alt="Left Image">
+      </li>
+    </ul>
+
+    <!-- Center Image -->
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+        <img src="https://engg.cambridge.edu.in/wp-content/uploads/2023/07/SIH.png" alt="Center Image">
+      </li>
+    </ul>
+
+    <!-- Right Image -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <img src="https://amritmahotsav.nic.in/writereaddata/portal/images/logo-poster-1.jpg" alt="Right Image">
+      </li>
+    </ul>
+</nav>
+<!-- Hero Section with Autoplay Video -->
+<div class="hero-section">
+    <video class="hero-video" autoplay muted loop>
+        <!-- Update the src attribute with the correct path to your video file -->
+        <source src="Mahmallapuram_Video.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+    <div class="hero-content">
+        <h1 class="display-4">Welcome to Your Thanjavur</h1>
+        <p class="lead">Explore the beauty of Thanjavur.</p>
+    </div>
+</div>
+
+<!-- Page Content -->
+<div class="container mt-3">
+
+    <!-- Audio Description with Text-to-Speech Feature -->
+    <div class="row">
+        <div class="col-md-6">
+            <audio controls id="audioPlayer" style="display: none;"></audio>
+            <textarea class="form-control" id="audioDescription" rows="3" style="display: none;"></textarea>
+            <button class="btn btn-primary mt-2" id="playAudioBtn" style="display: none;">Play Audio</button>
+        </div>
+    </div>
+
+    <!-- Information Section -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <h2>Tanjavur - UNESCO World Heritage Site</h2>
+            <p>Tanjavur, also known as Tanjore, is a city in the Indian state of Tamil Nadu, renowned for the UNESCO World Heritage Site of the Brihadeeswarar Temple. It stands as a testament to the rich cultural and architectural heritage of the Chola dynasty, drawing admiration from visitors and history enthusiasts...</p>
+              <!-- More Information -->
+            <p>Tanjavur, also known as Tanjore, is a city in the Indian state of Tamil Nadu, celebrated for the UNESCO World Heritage Site of the Brihadeeswarar Temple. This ancient city holds a significant place in the history of the Chola dynasty, known for its magnificent contributions to art, architecture, and spirituality.
+
+            Tanjavur is prominently marked by the Brihadeeswarar Temple, dedicated to Lord Shiva. The temple is an exemplar of Chola architecture, featuring a towering vimana and intricate sculptures. The city served as the capital of the Chola dynasty and played a crucial role in the flourishing of art and culture during that era.
+
+            The Brihadeeswarar Temple is renowned for its grandeur, with the massive Shiva lingam attracting devotees and art connoisseurs alike. Tanjavur is not only a historical hub but also a center for classical arts, especially Bharatanatyam and Carnatic music.
+
+            Visitors flock to Tanjavur to witness the cultural richness, explore the palace complex, and marvel at the ancient structures that showcase the artistic brilliance of the Chola dynasty. The city's cultural vibrancy and historical significance make Tanjavur a captivating destination for those seeking a glimpse into India's glorious past.</p>
+
+            </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-6">
+            <h2>Audio Description</h2>
+            <!-- Your audio player element -->
+            <audio controls id="audioPlayer" style="width: 100%;">
+                <!-- Update the src attribute with the correct path to your audio file -->
+                <source src="Tanjavur.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+    <br>
+
+    <!-- Image and Description Section -->
+    <div class="row">
+        <div class="col-md-6">
+            <img src="C:\Users\varsh\OneDrive\Desktop\tanja\images.jpeg" class="img-fluid" alt="Your Image">
+        </div>
+        <div class="col-md-6">
+            <h2>Tanjavur</h2>
+            <p>Thanjavur, a city located in the southern Indian state of Tamil Nadu, is steeped in rich historical and cultural significance.</p>
+            <div class="mt-4">
+                <h4>Scan QR Code</h4>
+                <!-- You can generate a QR code using an online generator and replace the placeholder below -->
+                <img src="thanjavur_QR_Scan.jpg" alt="QR Code" class="img-fluid" width="200" height="200">
+            </div>
+        </div>
+    </div>
+
+    <!-- Drop-down Menus -->
+    <div class="row mt-4">
+        
+    </div>
+    <style>
+        body {
+          background-color: #f8f9fa;
+        }
+    
+        .container {
+          max-width: 600px;
+          background-color: #ffffff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        h1 {
+          color: #007bff;
+        }
+    
+        .form-group {
+          margin-bottom: 20px;
+        }
+    
+        label {
+          font-weight: bold;
+        }
+    
+        /* Styling for the select menus */
+        .form-control {
+          background-color: #e9ecef;
+        }
+    
+        /* Styling for the selected options in the select menus */
+        .form-control option {
+          background-color: #ffffff;
+        }
+    
+        /* Hide Dharasanam Timings initially */
+        #dharasanamTimingsSelect {
+          display: none;
+        }
+    
+        /* Hide Audio Language Select initially */
+        #audioLanguageSelect {
+          display: none;
+        }
+    
+        /* Styling for the Dharasanam Timings table */
+        #dharasanamTimingsTable {
+          display: none;
+        }
+    
+        #dharasanamTimingsTable table {
+          width: 100%;
+          margin-top: 10px;
+          border-collapse: collapse;
+        }
+    
+        #dharasanamTimingsTable th, #dharasanamTimingsTable td {
+          border: 1px solid #dee2e6;
+          padding: 8px;
+          text-align: left;
+        }
+      </style>
+    </head>
+
+    <body>
+    
+        <div class="container">
+          <h1>Thanjavur Pilgrim Service</h1>
+        
+          <div class="form-group">
+            <label>Pilgrim Service</label>
+            <select class="form-control" id="pilgrimService" onchange="toggleOptions()">
+              <option value="choose" selected disabled>Choose</option>
+              <option value="sthalaPuranam">Sthala Puranam</option>
+              <option value="dharasanam">Dharasanam</option>
+            </select>
+          </div>
+        
+          <div class="form-group" id="audioLanguageSelect">
+            <label>Audio Language</label>
+            <select class="form-control" id="audioLanguage" onchange="playAudio()">
+              <option value="choose" selected disabled>Choose</option>
+              <option value="tamil">Tamil</option>
+              <option value="english">English</option>
+              <option value="hindi">Hindi</option>
+              <option value="malayalam">Malayalam</option>
+              <option value="telugu">Telugu</option>
+              <option value="france">French</option>
+              <option value="korean">Korean</option>
+            </select>
+          </div>
+        
+          <div id="dharasanamTimingsTable">
+            <label>Dharasanam Timings</label>
+            <table>
+              <tr>
+                <th>Day</th>
+                <th>Timings</th>
+              </tr>
+              <tr>
+                <td>Monday to Friday</td>
+                <td>6 am to 8 pm</td>
+              </tr>
+              <tr>
+                <td>Saturday and Sunday</td>
+                <td>8 am to 5 pm</td>
+              </tr>
+            </table>
+          </div>
+        
+          <!-- Audio Player -->
+          <div>
+            <label>Now Playing</label>
+            <audio id="audio" controls>
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        
+        </div>
+        
+        <script>
+          function toggleOptions() {
+            var audioLanguageSelect = document.getElementById("audioLanguageSelect");
+            var dharasanamTimingsTable = document.getElementById("dharasanamTimingsTable");
+            var pilgrimServiceSelect = document.getElementById("pilgrimService");
+        
+            // Reset select options
+            document.getElementById("audioLanguage").selectedIndex = 0;
+        
+            if (pilgrimServiceSelect.value === "sthalaPuranam") {
+              audioLanguageSelect.style.display = "block";
+              dharasanamTimingsTable.style.display = "none";
+            } else if (pilgrimServiceSelect.value === "dharasanam") {
+              audioLanguageSelect.style.display = "none";
+              dharasanamTimingsTable.style.display = "block";
+            } else {
+              audioLanguageSelect.style.display = "none";
+              dharasanamTimingsTable.style.display = "none";
+            }
+          }
+        
+          function playAudio() {
+            var audioLanguage = document.getElementById("audioLanguage").value;
+            var audioSource = document.getElementById("audio");
+        
+            // Set the source of the audio file based on the selected language
+            switch (audioLanguage) {
+              case "tamil":
+                audioSource.src = "ta_audio.mp3";
+                break;
+              case "malayalam":
+                audioSource.src = "ml_audio.mp3";
+                break;
+              case "english":
+                audioSource.src = "en_audio.mp3";
+                break;
+              case "hindi":
+                audioSource.src = "hi_audio.mp3";
+                break;
+              case "telugu":
+                audioSource.src = "te_audio.mp3";
+                break;
+              case "chinese":
+                audioSource.src = "zn-cn_audio.mp3";
+                break;
+              case "france":
+                audioSource.src = "fr_audio.mp3";
+                break;
+              case "korean":
+                audioSource.src = "ko_audio.mp3";
+                break;
+              default:
+                // Hide the audio player for other languages
+                audioSource.src = "";
+                return;
+            }
+        
+            // Play the audio
+            audioSource.play();
+          }
+        </script>
+
+
+
+    <!-- Key Features Section -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <h3>Key Features</h3>
+            <ul>
+                <li>Historical Significance: Thanjavur is renowned for its rich historical heritage, dating back to the Chola dynasty.</li>
+                <li>Brihadeeswarar Temple: Explore the magnificent Brihadeeswarar Temple, a UNESCO World Heritage Site and a masterpiece of Chola architecture.</li>
+                <li>Art and Culture Hub: Thanjavur is a vibrant center for classical arts, especially known for Bharatanatyam, Carnatic music, and traditional Tanjore paintings.</li>
+                <li>Tanjore Paintings: Admire the unique and intricate Tanjore paintings that are a traditional art form of this region.</li>
+                <li>Rice Bowl of Tamil Nadu: Thanjavur is often referred to as the "Rice Bowl of Tamil Nadu" due to its significant agricultural contributions.</li>
+                <li>Palace Complex: Visit the Thanjavur Maratha Palace, a vast complex that includes the Saraswathi Mahal Library known for its ancient palm leaf manuscripts.</li>
+                <li>Cultural Heritage: Experience the cultural richness with classical dance, music festivals, and traditional festivals celebrated in Thanjavur.</li>
+                <li>Saraswathi Mahal Library: Explore the Saraswathi Mahal Library, housing a rare collection of manuscripts and historical artifacts.</li>
+                <li>Kumbakonam Degree Coffee: Indulge in the unique and flavorful Kumbakonam degree coffee, a local specialty.</li>
+                <li>Architectural Marvels: Marvel at the various temples and architectural wonders that showcase the grandeur of Chola and Nayak dynasties.</li>
+              </ul>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Google Translate Dropdown -->
+<div id="google_translate_element" class="fixed-bottom m-3"></div>
+
+<!-- Additional JavaScript Enhancement -->
+<script>
+    // Image Slideshow
+    let currentImageIndex = 0;
+    const images = ["https://lh5.googleusercontent.com/p/AF1QipMr9X9ztPMTpWmFKa6OGJ6ohiJ5gzdnZX8guOvX=w675-h390-n-k-no ", "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQW2HkjsCBMXaDGvYpInrqW8XLECJKgGG9sKwWLyGOwT8SzCye6Io3AR24uTrCycXAcq3_2yt8W-cEPpp_rzRRGUv7quWDKsUKLHUffcw", "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQW2HkjsCBMXaDGvYpInrqW8XLECJKgGG9sKwWLyGOwT8SzCye6Io3AR24uTrCycXAcq3_2yt8W-cEPpp_rzRRGUv7quWDKsUKLHUffcw","https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQMvpRUYPX3cj6tIwiAUcgjgplBk4Tgll5a1HEogZMmqpj1tNFfZZqsJSFb6szT-syHQrp6XiisvSZ3C_2wnvWSNOgbm2iYkaOpeAo0lQ","https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQuGDtosf645pDGX_xh4HFxCrmPND4PYIf8JHypTRFG0hiJLry9_c-uYqFBDjaJBSX-kKThp_pfMaiavXbWyeDDVFVR-XEenuVE_IpTkw","https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRqagTlpMj3OqrMv5KvqEUeAvuHXPAK8mMrrx-wTZVMejOtMc4TuMWr-U0oNjfxvrsouPqaxcezAr_w4Wc3kTCOKnY4IWvVPdyoM0uXhw","https://lh5.googleusercontent.com/p/AF1QipNJdIuyWrbKl45yrJlueggSP1GoqPqDoeGSdxSw=w675-h390-n-k-no","https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcTui9HZmDk-NpUKTUGUa5gRuoNtwEF383WxJ0vk_I9D0No0MXBOSJCYCfN--LGLUdBM4Umf2p-Wp6ANshMQqydi2NVeRPEZ5GpznyhPiQ"];
+    const imageElement = document.querySelector('.img-fluid');
+
+    function changeImage() {
+        imageElement.src = images[currentImageIndex];
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+    }
+
+    setInterval(changeImage, 3000); // Change image every 3 seconds
+
+    // Form Submission Alert
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        alert('Form submitted successfully!');
+    });
+
+    // Text-to-Speech Feature
+    const audioPlayer = document.getElementById('audioPlayer');
+    const audioDescription = document.getElementById('audioDescription');
+    const playAudioBtn = document.getElementById('playAudioBtn');
+
+    playAudioBtn.addEventListener('click', function () {
+        const text = audioDescription.value.trim();
+        if (text !== '') {
+            convertTextToSpeech(text, 'en-US');
+        }
+    });
+
+    function convertTextToSpeech(text, languageCode) {
+        // Your text-to-speech conversion logic here
+    }
+</script>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- Google Translate API -->
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Text-to-Speech with Controls</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- Content Section -->
+<div class="container mt-3">
+    <!-- Textarea for User Input -->
+    <div class="form-group">
+        <label for="textInput">Enter Text:</label>
+        <textarea class="form-control" id="textInput" rows="3">Tanjavur, also known as Tanjore, is a city in the Indian state of Tamil Nadu, renowned for the UNESCO World Heritage Site of the Brihadeeswarar Temple. It stands as a testament to the rich cultural and architectural heritage of the Chola dynasty, drawing admiration from visitors and history enthusiasts...
+
+            Tanjavur, also known as Tanjore, is a city in the Indian state of Tamil Nadu, celebrated for the UNESCO World Heritage Site of the Brihadeeswarar Temple. This ancient city holds a significant place in the history of the Chola dynasty, known for its magnificent contributions to art, architecture, and spirituality. Tanjavur is prominently marked by the Brihadeeswarar Temple, dedicated to Lord Shiva. The temple is an exemplar of Chola architecture, featuring a towering vimana and intricate sculptures. The city served as the capital of the Chola dynasty and played a crucial role in the flourishing of art and culture during that era. The Brihadeeswarar Temple is renowned for its grandeur, with the massive Shiva lingam attracting devotees and art connoisseurs alike. Tanjavur is not only a historical hub but also a center for classical arts, especially Bharatanatyam and Carnatic music. Visitors flock to Tanjavur to witness the cultural richness, explore the palace complex, and marvel at the ancient structures that showcase the artistic brilliance of the Chola dynasty. The city's cultural vibrancy and historical significance make Tanjavur a captivating destination for those seeking a glimpse into India's glorious past.
+            
+            </textarea>
+    </div>
+
+    <!-- Language Selection Dropdown -->
+    <div class="form-group">
+        <label for="voiceList">Select Voice:</label>
+        <select class="form-control" id="voiceList"></select>
+    </div>
+
+    <!-- Button to Convert Text to Speech -->
+    <button class="btn btn-primary" id="speechBtn">Convert to Speech</button>
+</div>
+
+<!-- JavaScript -->
+<script>
+    const textarea = document.getElementById("textInput");
+    const voiceList = document.getElementById("voiceList");
+    const speechBtn = document.getElementById("speechBtn");
+
+    let synth = speechSynthesis;
+    let isSpeaking = false;
+
+    function voices() {
+        voiceList.innerHTML = "";
+        for (let voice of synth.getVoices()) {
+            let selected = voice.name === "Google US English" ? "selected" : "";
+            let option = `<option value="${voice.name}" ${selected}>${voice.name} (${voice.lang})</option>`;
+            voiceList.insertAdjacentHTML("beforeend", option);
+        }
+    }
+
+    synth.addEventListener("voiceschanged", voices);
+
+    function textToSpeech(text) {
+        let utterance = new SpeechSynthesisUtterance(text);
+        for (let voice of synth.getVoices()) {
+            if (voice.name === voiceList.value) {
+                utterance.voice = voice;
+            }
+        }
+        synth.speak(utterance);
+    }
+
+    speechBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        if (textarea.value.trim() !== "") {
+            if (!synth.speaking) {
+                textToSpeech(textarea.value);
+            }
+            if (textarea.value.length > 80) {
+                setInterval(() => {
+                    if (!synth.speaking && !isSpeaking) {
+                        isSpeaking = true;
+                        speechBtn.innerText = "Convert To Speech";
+                    } else {
+                    }
+                }, 500);
+                if (isSpeaking) {
+                    synth.resume();
+                    isSpeaking = false;
+                    speechBtn.innerText = "Pause Speech";
+                } else {
+                    synth.pause();
+                    isSpeaking = true;
+                    speechBtn.innerText = "Resume Speech";
+                }
+            } else {
+                speechBtn.innerText = "Convert To Speech";
+            }
+        }
+    });
+
+    // Trigger voices() to populate the voiceList initially
+    voices();
+</script>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

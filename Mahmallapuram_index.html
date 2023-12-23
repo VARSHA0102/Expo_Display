@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mamallapuram - UNESCO World Heritage Site</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+    <style>
+        /* Custom styles for the hero section */
+        .hero-section {
+            position: relative;
+            height: 50vh;
+            overflow: hidden;
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            z-index: 1;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: #343a40; /* Dark background color */
+        }
+        .navbar img {
+            max-height: 40px; /* Adjust the maximum height of the images as needed */
+            margin-right: 10px; /* Add some spacing between images */
+        }
+        
+    </style>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Expo-Display</a>
+
+  <!-- Left Image -->
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Ministry_of_Tourism_India.svg" alt="Left Image">
+    </li>
+  </ul>
+
+  <!-- Center Image -->
+  <ul class="navbar-nav mx-auto">
+    <li class="nav-item">
+      <img src="https://engg.cambridge.edu.in/wp-content/uploads/2023/07/SIH.png" alt="Center Image">
+    </li>
+  </ul>
+
+  <!-- Right Image -->
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <img src="https://amritmahotsav.nic.in/writereaddata/portal/images/logo-poster-1.jpg" alt="Right Image">
+    </li>
+  </ul>
+</nav>
+<!-- Hero Section with Autoplay Video -->
+<div class="hero-section">
+    <video class="hero-video" autoplay muted loop>
+        <!-- Update the src attribute with the correct path to your video file -->
+        <source src="Mahmallapuram_Video.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+    <div class="hero-content">
+        <h1 class="display-4">Welcome to Your Mamallapuram</h1>
+        <p class="lead">Explore the beauty of Mamallapuram.</p>
+    </div>
+</div>
+
+
+<!-- Page Content -->
+<div class="container mt-3">
+
+    <!-- Audio Description with Text-to-Speech Feature -->
+    <div class="row">
+        <div class="col-md-6">
+            <audio controls id="audioPlayer" style="display: none;"></audio>
+            <textarea class="form-control" id="audioDescription" rows="3" style="display: none;"></textarea>
+            <button class="btn btn-primary mt-2" id="playAudioBtn" style="display: none;">Play Audio</button>
+        </div>
+    </div>
+
+    <!-- Information Section -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <h2>Mamallapuram - UNESCO World Heritage Site</h2>
+            <p>Mamallapuram, also known as Mahabalipuram, is a town in Chengalpattu district in the southeastern Indian state of Tamil Nadu, best known for the UNESCO World Heritage Site of 7th- and 8th-century Hindu Group of Monuments at Mahabalipuram...</p>
+            <!-- More Information -->
+            <p>Mamallapuram, also known as Mahabalipuram, is a town in Chengalpattu district in the southeastern Indian state of Tamil Nadu, best known for the UNESCO World Heritage Site of 7th- and 8th-century Hindu Group of Monuments at Mahabalipuram. It is one of the famous tourist sites in India.[1] The ancient name of the place is Thirukadalmallai. It is a part of Chennai Metropolitan Area. It is a satellite town of Chennai.
+
+                Mamallapuram was one of two major port cities in the Pallava kingdom. The town was named after Pallava king Narasimhavarman I, who was also known as Mamalla. Along with economic prosperity, it became the site of a group of royal monuments, many carved out of the living rock. These are dated to the 7th and 8th centuries: rathas (temples in the form of chariots), mandapas (cave sanctuaries), the giant open-air rock relief the Descent of the Ganges, and the Shore Temple dedicated to Shiva.[1][3] The contemporary town plan was established by the British Raj in 1827.[4])</p>
+        </div>
+    </div>
+    <!-- Audio Player -->
+<div class="row mt-3">
+    <div class="col-md-6">
+        <h2>Audio Description</h2>
+        <!-- Your audio player element -->
+        <audio controls id="audioPlayer" style="width: 100%;">
+            <!-- Update the src attribute with the correct path to your audio file -->
+            <source src="Mahmallapuram_Audio.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>
+<br>
+
+    <!-- Image and Description Section -->
+    <div class="row">
+        <div class="col-md-6">
+            <img src="/Users/apple/Desktop/audio/imagea.jpg" class="img-fluid" alt="Your Image">
+        </div>
+        <div class="col-md-6">
+            <h2>Mamallapuram</h2>
+            <p>Mamallapuram, also known as Mahabalipuram, is a historic town in Tamil Nadu, India. Recognized as a UNESCO World Heritage Site, it is renowned for its 7th- and 8th-century Hindu Group of Monuments.</p>
+            <!-- QR Code Section -->
+            <div class="mt-4">
+                <h4>Scan QR Code</h4>
+                <!-- You can generate a QR code using an online generator and replace the placeholder below -->
+                <img src="Mahmallapuram_QR_Scan.jpg" alt="QR Code" class="img-fluid" width="200" height="200">
+            </div>
+        </div>
+    </div>
+
+    <!-- Drop-down Menus -->
+    <div class="row mt-4">
+    </div>
+    <style>
+        body {
+          background-color: #f8f9fa;
+        }
+    
+        .container {
+          max-width: 600px;
+          background-color: #ffffff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        h1 {
+          color: #007bff;
+        }
+    
+        .form-group {
+          margin-bottom: 20px;
+        }
+    
+        label {
+          font-weight: bold;
+        }
+    
+        /* Styling for the select menus */
+        .form-control {
+          background-color: #e9ecef;
+        }
+    
+        /* Styling for the selected options in the select menus */
+        .form-control option {
+          background-color: #ffffff;
+        }
+    
+        /* Hide Dharasanam Timings initially */
+        #dharasanamTimingsSelect {
+          display: none;
+        }
+    
+        /* Hide Audio Language Select initially */
+        #audioLanguageSelect {
+          display: none;
+        }
+    
+        /* Styling for the Dharasanam Timings table */
+        #dharasanamTimingsTable {
+          display: none;
+        }
+    
+        #dharasanamTimingsTable table {
+          width: 100%;
+          margin-top: 10px;
+          border-collapse: collapse;
+        }
+    
+        #dharasanamTimingsTable th, #dharasanamTimingsTable td {
+          border: 1px solid #dee2e6;
+          padding: 8px;
+          text-align: left;
+        }
+      </style>
+    </head>
+    <body>
+    
+    <div class="container">
+      <h1>Mamallapuram Pilgrim Service</h1>
+    
+      <div class="form-group">
+        <label>Pilgrim Service</label>
+        <select class="form-control" id="pilgrimService" onchange="toggleOptions()">
+          <option value="choose" selected disabled>Choose</option>
+          <option value="sthalaPuranam">Sthala Puranam</option>
+          <option value="dharasanam">Dharasanam</option>
+        </select>
+      </div>
+    
+      <div class="form-group" id="audioLanguageSelect">
+        <label>Audio Language</label>
+        <select class="form-control" id="audioLanguage" onchange="playAudio()">
+          <option value="choose" selected disabled>Choose</option>
+          <option value="tamil">Tamil</option>
+          <option value="english">English</option>
+          <option value="hindi">Hindi</option>
+          <option value="malayalam">Malayalam</option>
+          <option value="telugu">Telugu</option>
+          <option value="france">French</option>
+          <option value="korean">Korean</option>
+        </select>
+      </div>
+    
+      <div id="dharasanamTimingsTable">
+        <label>Dharasanam Timings</label>
+        <table>
+          <tr>
+            <th>Day</th>
+            <th>Timings</th>
+          </tr>
+          <tr>
+            <td>Monday to Friday</td>
+            <td>6 am to 8 pm</td>
+          </tr>
+          <tr>
+            <td>Saturday and Sunday</td>
+            <td>8 am to 5 pm</td>
+          </tr>
+        </table>
+      </div>
+    
+      <!-- Audio Player -->
+      <div>
+        <label>Now Playing</label>
+        <audio id="audio" controls>
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    
+    </div>
+    
+    <script>
+      function toggleOptions() {
+        var audioLanguageSelect = document.getElementById("audioLanguageSelect");
+        var dharasanamTimingsTable = document.getElementById("dharasanamTimingsTable");
+        var pilgrimServiceSelect = document.getElementById("pilgrimService");
+    
+        // Reset select options
+        document.getElementById("audioLanguage").selectedIndex = 0;
+    
+        if (pilgrimServiceSelect.value === "sthalaPuranam") {
+          audioLanguageSelect.style.display = "block";
+          dharasanamTimingsTable.style.display = "none";
+        } else if (pilgrimServiceSelect.value === "dharasanam") {
+          audioLanguageSelect.style.display = "none";
+          dharasanamTimingsTable.style.display = "block";
+        } else {
+          audioLanguageSelect.style.display = "none";
+          dharasanamTimingsTable.style.display = "none";
+        }
+      }
+    
+      function playAudio() {
+        var audioLanguage = document.getElementById("audioLanguage").value;
+        var audioSource = document.getElementById("audio");
+    
+        // Set the source of the audio file based on the selected language
+        switch (audioLanguage) {
+          case "tamil":
+            audioSource.src = "ta_audio.mp3";
+            break;
+          case "malayalam":
+            audioSource.src = "ml_audio.mp3";
+            break;
+          case "english":
+            audioSource.src = "en_audio.mp3";
+            break;
+          case "hindi":
+            audioSource.src = "hi_audio.mp3";
+            break;
+          case "telugu":
+            audioSource.src = "te_audio.mp3";
+            break;
+          case "chinese":
+            audioSource.src = "zn-cn_audio.mp3";
+            break;
+          case "france":
+            audioSource.src = "fr_audio.mp3";
+            break;
+          case "korean":
+            audioSource.src = "ko_audio.mp3";
+            break;
+          default:
+            // Hide the audio player for other languages
+            audioSource.src = "";
+            return;
+        }
+    
+        // Play the audio
+        audioSource.play();
+      }
+    </script>
+    
+
+    <!-- Key Features Section -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <h3>Key Features</h3>
+            <ul>
+                <li>Historical Significance: Mahabalipuram is known for its rich historical heritage, dating back to the Pallava dynasty.</li>
+            <li>UNESCO World Heritage Site: The town boasts a UNESCO World Heritage Site featuring 7th- and 8th-century Hindu Group of Monuments.</li>
+            <li>Rathas (Chariot Temples): The rock-cut temples resembling chariots are a distinctive feature of Mahabalipuram.</li>
+            <li>Mandapas (Cave Sanctuaries): Explore the cave sanctuaries showcasing intricate carvings and sculptures.</li>
+            <li>Descent of the Ganges: Marvel at the giant open-air rock relief depicting the mythological descent of the Ganges.</li>
+            <li>Shore Temple: Visit the Shore Temple dedicated to Lord Shiva, a prominent and well-preserved structure.</li>
+            <li>Pallava Architecture: Admire the architectural marvels that reflect the grandeur of Pallava craftsmanship.</li>
+            <li>Pilgrimage Site: Mahabalipuram attracts pilgrims and tourists alike, offering a spiritual and cultural experience.</li>
+            <li>Seaside Location: Enjoy the scenic beauty of the town located along the coastline of the Bay of Bengal.</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<!-- Google Translate Dropdown -->
+<div id="google_translate_element" class="fixed-bottom m-3"></div>
+
+<!-- Additional JavaScript Enhancement -->
+<script>
+    // Image Slideshow
+    let currentImageIndex = 0;
+    const images = ["https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRxBzljpOFSvH1Smyrzx8T-pht1l_FK0Vn2gV9h3h_UzmIsndF1X9BxTRPJ4hFjTHuylnRoDamkv-mIfDl2aO4cey0UOxTDCWT-9Hkn-g", "https://lh5.googleusercontent.com/p/AF1QipPDS4y9RBTN0tVytddtOTfBOStsJvJ8b_2tN-bX=w1080-h624-n-k-no", "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRgBr-XP38yf_Hax7PMBi7oxYxwVNMOSpOWZ-W0ByhiOIXIRAmG00ZWopewWJGxVLdl1j1NdTbQrPwlftHaAMUjeP4ICY3EEJSfG_Bs_g"];
+    const imageElement = document.querySelector('.img-fluid');
+
+    function changeImage() {
+        imageElement.src = images[currentImageIndex];
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+    }
+
+    setInterval(changeImage, 3000); // Change image every 3 seconds
+
+    // Form Submission Alert
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        alert('Form submitted successfully!');
+    });
+
+    // Text-to-Speech Feature
+    const audioPlayer = document.getElementById('audioPlayer');
+    const audioDescription = document.getElementById('audioDescription');
+    const playAudioBtn = document.getElementById('playAudioBtn');
+
+    playAudioBtn.addEventListener('click', function () {
+        const text = audioDescription.value.trim();
+        if (text !== '') {
+            convertTextToSpeech(text, 'en-US');
+        }
+    });
+
+    function convertTextToSpeech(text, languageCode) {
+        // Your text-to-speech conversion logic here
+    }
+</script>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- Google Translate API -->
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Text-to-Speech with Controls</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- Content Section -->
+<div class="container mt-3">
+    <!-- Textarea for User Input -->
+    <div class="form-group">
+        <label for="textInput">Enter Text:</label>
+        <textarea class="form-control" id="textInput" rows="3">Mamallapuram, also known as Mahabalipuram, is a town in Chengalpattu district in the southeastern Indian state of Tamil Nadu, best known for the UNESCO World Heritage Site of 7th- and 8th-century Hindu Group of Monuments at Mahabalipuram... Mamallapuram, also known as Mahabalipuram, is a town in Chengalpattu district in the southeastern Indian state of Tamil Nadu, best known for the UNESCO World Heritage Site of 7th- and 8th-century Hindu Group of Monuments at Mahabalipuram. It is one of the famous tourist sites in India.The ancient name of the place is Thirukadalmallai. It is a part of Chennai Metropolitan Area. It is a satellite town of Chennai. Mamallapuram was one of two major port cities in the Pallava kingdom. The town was named after Pallava king Narasimhavarman I, who was also known as Mamalla. Along with economic prosperity, it became the site of a group of royal monuments, many carved out of the living rock. These are dated to the 7th and 8th centuries: rathas (temples in the form of chariots), mandapas (cave sanctuaries), the giant open-air rock relief the Descent of the Ganges, and the Shore Temple dedicated to Shiva. The contemporary town plan was established by the British Raj in 1827.</textarea>
+    </div>
+
+    <!-- Language Selection Dropdown -->
+    <div class="form-group">
+        <label for="voiceList">Select Voice:</label>
+        <select class="form-control" id="voiceList"></select>
+    </div>
+
+    <!-- Button to Convert Text to Speech -->
+    <button class="btn btn-primary" id="speechBtn">Convert to Speech</button>
+</div>
+
+<!-- JavaScript -->
+<script>
+    const textarea = document.getElementById("textInput");
+    const voiceList = document.getElementById("voiceList");
+    const speechBtn = document.getElementById("speechBtn");
+
+    let synth = speechSynthesis;
+    let isSpeaking = false;
+
+    function voices() {
+        voiceList.innerHTML = "";
+        for (let voice of synth.getVoices()) {
+            let selected = voice.name === "Google US English" ? "selected" : "";
+            let option = `<option value="${voice.name}" ${selected}>${voice.name} (${voice.lang})</option>`;
+            voiceList.insertAdjacentHTML("beforeend", option);
+        }
+    }
+
+    synth.addEventListener("voiceschanged", voices);
+
+    function textToSpeech(text) {
+        let utterance = new SpeechSynthesisUtterance(text);
+        for (let voice of synth.getVoices()) {
+            if (voice.name === voiceList.value) {
+                utterance.voice = voice;
+            }
+        }
+        synth.speak(utterance);
+    }
+
+    speechBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        if (textarea.value.trim() !== "") {
+            if (!synth.speaking) {
+                textToSpeech(textarea.value);
+            }
+            if (textarea.value.length > 80) {
+                setInterval(() => {
+                    if (!synth.speaking && !isSpeaking) {
+                        isSpeaking = true;
+                        speechBtn.innerText = "Convert To Speech";
+                    } else {
+                    }
+                }, 500);
+                if (isSpeaking) {
+                    synth.resume();
+                    isSpeaking = false;
+                    speechBtn.innerText = "Pause Speech";
+                } else {
+                    synth.pause();
+                    isSpeaking = true;
+                    speechBtn.innerText = "Resume Speech";
+                }
+            } else {
+                speechBtn.innerText = "Convert To Speech";
+            }
+        }
+    });
+
+    // Trigger voices() to populate the voiceList initially
+    voices();
+</script>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
